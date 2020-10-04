@@ -1,5 +1,9 @@
- .hello-react {
+.hello-react {
   color: #00ff15;
+}
+
+h1 {
+  color: #ff0000;
 }
 
 .App {
