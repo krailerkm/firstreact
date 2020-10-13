@@ -9,7 +9,13 @@ function App() {
   const num2 = 222;
   return (
     <div>
+      <div class="MenuBarTextAlign">
+        <a target="_blank" rel="noopener" class="alert alert-danger" href="#">First Page</a>
+        <a target="_blank" rel="noopener" class="alert alert-info" href="#">Store</a>
+        <a target="_blank" rel="noopener" class="alert alert-success" href="#">Contract</a>
+      </div>
       <Header title = {fullname} />
+      <Header title = "Hello world"/>
       <p>Sum : {num1 / num2}</p>
         <div className="App">
           <h1 className="hello-react"><i>Hello World!!</i></h1>
@@ -44,6 +50,14 @@ function App() {
               Learn React
             </a>
           </header>
+          <div class="alert alert-primary">Bootstrap in React!!</div>
+          <div class="alert alert-secondary">Bootstrap in React!!</div>
+          <div class="alert alert-dark">Bootstrap in React!!</div>
+          <div class="alert alert-light">Bootstrap in React!!</div>
+          <div class="alert alert-info">Bootstrap in React!!</div>
+          <div class="alert alert-success">Bootstrap in React!!</div>
+          <div class="alert alert-warning">Bootstrap in React!!</div>
+          <div class="alert alert-danger">Bootstrap in React!!</div>
       </div>
     </div>
 

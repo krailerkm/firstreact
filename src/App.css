@@ -1,5 +1,15 @@
+.MenuBarTextAlign{
+  margin-top: 25px;
+  text-align: center;
+}
+
 .hello-react {
   color: #00ff15;
+}
+div {
+  color: white;
+  background-color: orange;
+  border: 2px dotted red;
 }
 
 h1 {
