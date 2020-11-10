@@ -5,19 +5,16 @@ import './App.css';
 function App() {
   const iniData = 0;
   const [data, setData] = useState(iniData);
-  const [txt, setTxt] = useState('Hello world');
-
-  useEffect(() => {
-    console.log({data});
-  });
 
   return (
     <div>
       <p>
-        Current data : {txt}
+        Current data : {data}
       </p>
 
-      <button onClick={() => setTxt('Hola me')}>Click</button>
+      <button onClick={() => setData(data+1)}>+</button>
+      <button onClick={() => setData(data-1)}>-</button>
+      <button onClick={() => setData(iniData)}>CC</button>
     </div>
 
   );
