@@ -1,24 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
+import React, { Component } from 'react';
+import Home from './Home';
 
-function App() {
-  const iniData = 0;
-  const [data, setData] = useState(iniData);
-
-  return (
-    <div>
-      <p>
-        Current data : {data}
-      </p>
-
-      <button onClick={() => setData(data+1)}>+</button>
-      <button onClick={() => setData(data-1)}>-</button>
-      <button onClick={() => setData(iniData)}>CC</button>
-    </div>
-
-  );
+class App extends Component {
+  render(){
+    return (
+      <div>
+        <h1>Hello world 1</h1>
+        <Home />
+      </div>
+    )
+  }
 }
 
 export default App;
