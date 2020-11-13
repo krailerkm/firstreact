@@ -1,11 +1,16 @@
-import React from 'react';
+import { render } from '@testing-library/react';
+import React, { Component } from 'react';
 
-function Home() {
-    return (
-        <div>
-            <h2>hello world 2</h2>
-        </div>
-    )
+class Home extends Component {
+    render(){
+        return (
+            <div>
+                <h2>hello world 2</h2>
+                <p>{this.props.name}</p>
+                <p>{this.props.address}</p>
+            </div>
+        )
+    }
 }
 
 export default Home 
